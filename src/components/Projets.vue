@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>mes projets</h1>
-    <div id="projects">
+    <div id="projects" class="part">
       <!-- blueprint. -->
       <div class="project">
         <div class="project__preview">
@@ -443,7 +443,7 @@ h3 {
 
   &__preview {
     @media only screen and (max-width: 686px) {
-      width: 90%;
+      width: 100%;
     }
     margin-right: 3rem;
     width: 45%;
@@ -456,7 +456,8 @@ h3 {
 
   &__desc {
     @media only screen and (max-width: 686px) {
-      width: 90%;
+      width: 100%;
+      text-align: left;
     }
     width: 45%;
 

@@ -1,5 +1,5 @@
 <template>
-  <div id="presentation">
+  <div id="presentation" class="part">
     <img src="@/assets/20200704_151552.jpg" id="picture" />
     <div id="presentation__right">
       <div id="presentation__right__title">
@@ -8,8 +8,8 @@
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="50"
-            height="50"
+            width="1em"
+            height="1em"
             viewBox="0 0 172 172"
             style=" fill:#000000;"
           >
@@ -73,21 +73,13 @@ export default {
       position: absolute;
     }
     max-width: 40%;
-    // width: 40vmax;
     height: auto;
     z-index: 1;
-    // left: 0;
-    // top: 50px;
-    // -webkit-filter: grayscale(100%);
-    // filter: grayscale(100%);
   }
 
   overflow: hidden;
   background-color: rgb(34, 34, 34);
-  // height: 110%;
-  // font-family: 'Yanone Kaffeesatz', sans-serif;
   display: flex;
-  // flex-wrap: column;
   align-items: center;
   justify-content: space-between;
   margin: 0 3rem;
@@ -95,7 +87,6 @@ export default {
   &__right {
     z-index: 2;
     width: 100%;
-    text-align: right;
 
     &__title {
       width: 100%;
@@ -106,6 +97,7 @@ export default {
       }
 
       h1 {
+        text-align: right;
         text-transform: uppercase;
         font-size: 3vmax;
         font-weight: 400;
@@ -122,20 +114,43 @@ export default {
       }
     }
 
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+
+      &__title {
+        width: 100%;
+        float: right;
+
+        h1 {
+          text-align: left
+        }
+
+        h2 {
+          max-width: 100%;
+          font-family: "Raleway", sans-serif;
+          font-size: 2vmax;
+          width: 100%;
+          float: none;
+          margin-bottom: 0;
+        }
+      }
+    }
+
     &__links {
       display: block;
       justify-content: space-between;
       margin: 2em;
 
       a {
-        @media only screen and (max-width: 670px) {
+        @media only screen and (max-width: 992px) {
           display: flex;
           width: auto;
           margin: 20px 0;
         }
 
+        white-space: nowrap;
         text-transform: uppercase;
-        font-size: 2vmax;
+        font-size: 1.8vmax;
         color: #fff;
         text-decoration: none;
         margin-right: 2rem;

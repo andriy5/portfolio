@@ -3,6 +3,7 @@
     <h1>Mon Parcours</h1>
     <div
       id="parcours_box"
+      class="part"
       ref="bg"
       :style="{ backgroundColor: activeColor, 'mask-image': painting }"
     >

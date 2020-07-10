@@ -1,9 +1,9 @@
 <template>
   <div>
     <h1>Qui suis-je ?</h1>
-    <div id="aboutme">
+    <div id="aboutme" class="part">
       <div id="aboutme-box">
-        <div>
+        <div class="type-me">
           <h2>points essentiels</h2>
           <ul>
             <li>Nom: Andriy Shakh</li>
@@ -17,7 +17,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="type-me"> 
           <h2>Hobbies</h2>
           <ul>
             <li>Football</li>
@@ -28,7 +28,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="type-me">
           <h2>Langues parlées</h2>
           <ul>
             <li>
@@ -80,7 +80,7 @@ export default {};
 
   &-box {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
   }
 

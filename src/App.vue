@@ -51,7 +51,7 @@ html body {
   #initiale {
     font-family: $yanone;
     font-size: 24px;
-    // font-weight: 400;
+    color: #fff;
     float: left;
   }
 }
@@ -81,14 +81,46 @@ h2 {
   font-size: 2vmax;
 }
 
-// #picture {
-//   position: absolute;
-//   width: 50vw;
-//   height: auto;
-//   z-index: -1;
-//   left: 0;
-//   top: 50px;
-//   // -webkit-filter: grayscale(100%);
-//   // filter: grayscale(100%);
-// }
+@media only screen and (max-width: 992px) {
+  .part {
+    margin: 0!important;
+  }
+
+  #presentation {
+    padding: 30px;
+  }
+
+  #nav a {
+    margin:0 1rem;
+  }
+
+  #presentation__right__links {
+    width: 50%;
+    float: right;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #picture {
+    display: none;
+  }
+ 
+  .type {
+  width: 44%;
+  }
+
+  .type-me {
+    width: 100%;
+    margin-bottom: 20px;
+
+    ul {
+      padding: 0;
+
+      li {
+        text-align: center!important;
+      }
+    }
+  }
+}
 </style>

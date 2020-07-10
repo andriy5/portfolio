@@ -2,7 +2,7 @@
   <div>
     <h1>Mes Compétences</h1>
     <div>
-      <div id="competence-box">
+      <div id="competence-box" class="part">
         <div id="competence-box-types">
           <div class="type">
             <h2>Front-End</h2>
