@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>
+      <!-- <router-link to="/">Home</router-link> -->
+      <a href="#aboutme">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#">CV</a>
+
+      <a id="initiale">A S</a>
       <!-- <router-link to="/about">About</router-link> -->
     </div>
     <router-view />
@@ -12,6 +17,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Yanone+Kaffeesatz:wght@400;700&display=swap");
 $raleway: "Raleway", sans-serif;
 $yanone: "Yanone Kaffeesatz", sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
 
 html body {
   padding: 0;
@@ -29,14 +38,24 @@ html body {
 
 #nav {
   padding: 30px;
+  margin-bottom: 15px;
+
+  a {
+    float: right;
+    font-weight: bold;
+    color: #d8d8d8;
+    text-decoration: none;
+    margin: 0 2rem;
+  }
+ 
+  #initiale {
+    font-family: $yanone;
+    font-size: 24px;
+    // font-weight: 400;
+    float: left;
+  }
 }
 
-#nav a {
-  float: right;
-  font-weight: bold;
-  color: #d8d8d8;
-  text-decoration: none;
-}
 
 // #nav a.router-link-exact-active {
 //   color: #42b983;
@@ -53,6 +72,13 @@ h1 {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 3vmax;
+}
+
+h2 {
+  font-family: $yanone;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2vmax;
 }
 
 // #picture {

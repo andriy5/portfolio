@@ -4,7 +4,10 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <Presentation />
     <Parcours />
+    <Competence />
     <Projets />
+    <AboutMe />
+    <Footer />
   </div>
 </template>
 
@@ -13,13 +16,19 @@
 import Presentation from "@/components/Presentation.vue";
 import Parcours from "@/components/Parcours.vue";
 import Projets from "@/components/Projets.vue";
+import Competence from "@/components/Competence.vue";
+import AboutMe from "@/components/AboutMe.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
   components: {
     Presentation,
     Parcours,
-    Projets
+    Projets,
+    Competence,
+    AboutMe,
+    Footer
   }
 };
 </script>

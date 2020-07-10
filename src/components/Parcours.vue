@@ -1,11 +1,14 @@
 <template>
   <div>
     <h1>Mon Parcours</h1>
-    <div id="parcours_box" ref="bg" :style="{ backgroundColor: activeColor, 'mask-image': painting }">
-
+    <div
+      id="parcours_box"
+      ref="bg"
+      :style="{ backgroundColor: activeColor, 'mask-image': painting }"
+    >
       <!-- <picture>
         <img src='@/assets/paint_transparent.png' id="painting"/>
-      </picture> -->
+      </picture>-->
 
       <div id="formation" class="parcours">
         <ul>
@@ -33,7 +36,7 @@
       </div>
 
       <!-- <h1 class="title-side-A">Formation</h1>
-      <h1 class="title-side-B">Éxperience</h1> -->
+      <h1 class="title-side-B">Éxperience</h1>-->
 
       <div id="xp" class="parcours">
         <ul>
