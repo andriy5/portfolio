@@ -1,7 +1,7 @@
 <template>
   <div id="presentation" class="part">
-    <img src="@/assets/20200704_151552.jpg" id="picture" />
     <div id="presentation__right">
+      <img src="@/assets/moi.png" id="picture" />
       <div id="presentation__right__title">
         <h1>
           <svg
@@ -40,7 +40,7 @@
           Bonjour ! je suis
           <u>Andriy Shakh</u>
         </h1>
-        <h1 id="title">Développeur Web Full-Stack</h1>
+        <h1 id="title" class="emphasis">Développeur Web Full-Stack</h1>
         <h2>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum
@@ -49,8 +49,8 @@
         </h2>
       </div>
       <div id="presentation__right__links">
-        <a href="#">Me contacter ☞</a>
-        <a href="#">Mon CV ☞</a>
+        <a href="#" class="btn">Me contacter ☞</a>
+        <a :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`" target="_blank" class="btn">Mon CV ☞</a>
       </div>
     </div>
   </div>
@@ -58,6 +58,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  },
   name: "Presentation",
   props: {
     msg: String
@@ -68,15 +73,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #presentation {
-  img {
-    @media only screen and (max-width: 670px) {
-      position: absolute;
-    }
-    max-width: 40%;
-    height: auto;
-    z-index: 1;
-  }
-
+  z-index: 1;
   overflow: hidden;
   background-color: rgb(34, 34, 34);
   display: flex;
@@ -84,9 +81,20 @@ export default {
   justify-content: space-between;
   margin: 0 3rem;
 
+  img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+  }
+
   &__right {
     z-index: 2;
     width: 100%;
+    position: relative;
 
     &__title {
       width: 100%;
@@ -110,19 +118,21 @@ export default {
         width: 100%;
         max-width: 70%;
         float: right;
+        text-align: right;
         margin-bottom: 3em;
       }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       text-align: center;
+      padding: 30px;
 
       &__title {
         width: 100%;
         float: right;
 
         h1 {
-          text-align: left
+          text-align: left;
         }
 
         h2 {
@@ -140,6 +150,8 @@ export default {
       display: block;
       justify-content: space-between;
       margin: 2em;
+      float: right;
+      padding-bottom: 2em;
 
       a {
         @media only screen and (max-width: 992px) {
@@ -163,6 +175,18 @@ export default {
         }
       }
     }
+  }
+}
+
+.emphasis {
+  background: linear-gradient(to right, #ffbb00 50%, #da1b1b 120%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+  @media only screen and (max-width: 992px) {
+    background: linear-gradient(to right, #ffbb00 -10%, #da1b1b 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 </style>

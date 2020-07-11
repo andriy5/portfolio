@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>mes projets</h1>
+    <h1 class="emphasis">mes projets</h1>
     <div id="projects" class="part">
       <!-- blueprint. -->
       <div class="project">
@@ -222,7 +222,7 @@
           </div>
         </div>
         <div class="project__preview project__preview-right">
-          <img src="@/assets/blueprint_show.gif" id="blueprint_video" class="video" />
+          <img src="@/assets/comingsoon.gif" id="blueprint_video" class="video" />
         </div>
       </div>
 

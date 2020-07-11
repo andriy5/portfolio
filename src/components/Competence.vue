@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Mes Compétences</h1>
+    <h1 class="emphasis">Mes Compétences</h1>
     <div>
       <div id="competence-box" class="part">
         <div id="competence-box-types">

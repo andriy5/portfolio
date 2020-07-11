@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Mon Parcours</h1>
+    <h1 class="emphasis">Mon Parcours</h1>
     <div
       id="parcours_box"
       class="part"

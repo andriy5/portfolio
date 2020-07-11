@@ -7,6 +7,7 @@
     <Competence />
     <Projets />
     <AboutMe />
+    <ContactMe />
     <Footer />
   </div>
 </template>
@@ -18,6 +19,7 @@ import Parcours from "@/components/Parcours.vue";
 import Projets from "@/components/Projets.vue";
 import Competence from "@/components/Competence.vue";
 import AboutMe from "@/components/AboutMe.vue";
+import ContactMe from "@/components/ContactMe.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -28,6 +30,7 @@ export default {
     Projets,
     Competence,
     AboutMe,
+    ContactMe,
     Footer
   }
 };

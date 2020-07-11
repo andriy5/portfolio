@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Qui suis-je ?</h1>
+    <h1 class="emphasis">Qui suis-je ?</h1>
     <div id="aboutme" class="part">
       <div id="aboutme-box">
         <div class="type-me">

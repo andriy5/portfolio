@@ -4,14 +4,24 @@
       <!-- <router-link to="/">Home</router-link> -->
       <a href="#aboutme">À propos</a>
       <a href="#projects">Projets</a>
-      <a href="#">CV</a>
+      <a :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`">CV</a>
 
-      <a id="initiale">A S</a>
+      <a id="initiale" class="emphasis">ANDRIY SHAKH</a>
       <!-- <router-link to="/about">About</router-link> -->
     </div>
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Yanone+Kaffeesatz:wght@400;700&display=swap");
@@ -43,19 +53,22 @@ html body {
   a {
     float: right;
     font-weight: bold;
-    color: #d8d8d8;
+    color: #ececec;
     text-decoration: none;
     margin: 0 2rem;
   }
- 
+
   #initiale {
     font-family: $yanone;
     font-size: 24px;
     color: #fff;
     float: left;
+
+    background: linear-gradient(to right, #ffbb00 0%, #da1b1b 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
-
 
 // #nav a.router-link-exact-active {
 //   color: #42b983;
@@ -83,15 +96,11 @@ h2 {
 
 @media only screen and (max-width: 992px) {
   .part {
-    margin: 0!important;
-  }
-
-  #presentation {
-    padding: 30px;
+    margin: 0 !important;
   }
 
   #nav a {
-    margin:0 1rem;
+    margin: 0 1rem;
   }
 
   #presentation__right__links {
@@ -105,9 +114,11 @@ h2 {
   #picture {
     display: none;
   }
- 
+
+  #initiale
+
   .type {
-  width: 44%;
+    width: 44%;
   }
 
   .type-me {
@@ -118,9 +129,15 @@ h2 {
       padding: 0;
 
       li {
-        text-align: center!important;
+        text-align: center !important;
       }
     }
   }
+}
+
+.emphasis {
+  background: linear-gradient(to right, #ffbb00 40%, #da1b1b 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 </style>
