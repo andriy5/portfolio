@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <Navbar />
-    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+    <!-- <Navbar /> -->
     <Presentation />
     <Parcours />
     <Competence />

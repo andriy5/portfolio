@@ -105,6 +105,7 @@
         </g>
       </svg>
     </a>
+    <p>©2020 – All rights reserved – Andriy shakh</p>
   </div>
 </template>
 
@@ -114,6 +115,7 @@ export default {};
 
 <style lang="scss" scoped>
 $yanone: "Yanone Kaffeesatz", sans-serif;
+$raleway: "Raleway", sans-serif;
 
 #contact {
   margin-top: 3rem;
@@ -140,5 +142,11 @@ $yanone: "Yanone Kaffeesatz", sans-serif;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+}
+
+p {
+  font-family: $raleway;
+  font-size: 0.7em;
+  float: right;
 }
 </style>

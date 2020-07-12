@@ -49,7 +49,7 @@
         </h2>
       </div>
       <div id="presentation__right__links">
-        <a href="#" class="btn">Me contacter ☞</a>
+        <a href="#contactme" class="btn">Me contacter ☞</a>
         <a :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`" target="_blank" class="btn">Mon CV ☞</a>
       </div>
     </div>

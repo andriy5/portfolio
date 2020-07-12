@@ -4,8 +4,6 @@
     <div
       id="parcours_box"
       class="part"
-      ref="bg"
-      :style="{ backgroundColor: activeColor, 'mask-image': painting }"
     >
       <!-- <picture>
         <img src='@/assets/paint_transparent.png' id="painting"/>
@@ -79,23 +77,7 @@
 
 <script>
 export default {
-  data() {
-    return {
-      // activeColor: 'blue',
-      // painting: 'url(https://mdn.mozillademos.org/files/12676/star.svg)'
-      // painting: 'url("src/assets/paint_transparent.png")',
-    };
-  },
-  name: "Parcours",
-  methods: {
-    changeBg() {
-      console.log(this.$refs["bg"]);
-      this.$refs["bg"].style.backgroundColor = "red";
-    },
-    resetBg() {
-      this.$refs["bg"].style.backgroundColor = "#222222";
-    }
-  }
+  name: "Parcours"
 };
 </script>
 
@@ -122,6 +104,7 @@ export default {
   @media only screen and (max-width: 750px) {
     min-width: 80%;
     text-align: center;
+    max-width: 100%;
   }
   max-width: 40%;
   margin: 2em;

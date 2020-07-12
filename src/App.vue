@@ -4,7 +4,7 @@
       <!-- <router-link to="/">Home</router-link> -->
       <a href="#aboutme">À propos</a>
       <a href="#projects">Projets</a>
-      <a :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`">CV</a>
+      <a :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`" target="_blank">CV</a>
 
       <a id="initiale" class="emphasis">ANDRIY SHAKH</a>
       <!-- <router-link to="/about">About</router-link> -->
@@ -36,6 +36,7 @@ html body {
   padding: 0;
   margin: 0;
   background-color: #1d1d1d;
+  font-family: $raleway;
 }
 
 #app {

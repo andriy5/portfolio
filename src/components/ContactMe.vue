@@ -4,19 +4,15 @@
     <div id="contactme" class="part">
       <form class="contact-form" @submit.prevent="sendEmail">
         <div class="part_name">
-          <input type="text" name="user_name" placeholder="Nom" />
+          <input type="text" name="user_name" placeholder="Nom" inputmode="text" />
         </div>
 
         <div class="part_email">
-          <input type="email" name="user_email" placeholder="E-mail" />
+          <input type="email" name="user_email" placeholder="E-mail" inputmode="email" />
         </div>
 
         <div class="part_msg">
-          <textarea name="message" placeholder="Bonjour Andriy..."></textarea>
-        </div>
-
-        <div class="part_error">
-          <p id="error-msg-contact">J'aimerais vraiment savoir ce que vous avez à me dire, pouvez vous remplir tous les champs.</p>
+          <textarea name="message" placeholder="Bonjour Andriy..." inputmode="text" rows="5" col="10"></textarea>
         </div>
 
         <div class="part_submit">
@@ -28,34 +24,51 @@
 </template>
 
 <script>
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
+import Vue from "vue";
+import VueToast from "vue-toast-notification";
+// Import one of available themes
+// import 'vue-toast-notification/dist/theme-default.css';
+import "vue-toast-notification/dist/theme-sugar.css";
 
 export default {
   methods: {
     sendEmail: (e) => {
-      if (e.target.user_name.value && e.target.user_email.value && e.target.message.value) {
-        alert("c bon mon khouia")
-      }
-      else {
-        document.getElementById("error-msg-contact").style.display = "block";
-        // alert("c pas bon mon khouia")
-      }
+      Vue.use(VueToast);
 
-      // emailjs
-      //   .sendForm(
-      //     "portfolioblablabla",
-      //     "template_wy0IdZjA",
-      //     e.target,
-      //     "user_N189Z1RJi2t5o8twhvDnT"
-      //   )
-      //   .then(
-      //     (result) => {
-      //       console.log("SUCCESS!", result.status, result.text);
-      //     },
-      //     (error) => {
-      //       console.log("FAILED...", error);
-      //     }
-      //   );
+      if (
+        e.target.user_name.value &&
+        e.target.user_email.value &&
+        e.target.message.value
+      ) {
+        emailjs
+          .sendForm(
+            "portfolioblablabla",
+            "template_wy0IdZjA",
+            e.target,
+            "user_N189Z1RJi2t5o8twhvDnT"
+          )
+          .then(
+            (result) => {
+              console.log("SUCCESS!", result.status, result.text);
+              Vue.$toast.open("Message envoyé !");
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              Vue.$toast.open({
+                message:
+                  "Il y a eu une erreur lors de l'envoi ! Si le problème persiste vous pouvez me joindre directement par mail.",
+                type: "error",
+              });
+            }
+          );
+      } else {
+        Vue.$toast.open({
+          message: "Il semblerait qu'un des champs soit manquant !",
+          type: "error",
+          duration: "5000",
+        });
+      }
     },
   },
 };
@@ -64,9 +77,6 @@ export default {
 <style lang="scss" scoped>
 $raleway: "Raleway", sans-serif;
 $yanone: "Yanone Kaffeesatz", sans-serif;
-#error-msg-contact {
-  display: none;
-}
 
 #contactme {
   margin: 0 3rem;
@@ -82,7 +92,9 @@ $yanone: "Yanone Kaffeesatz", sans-serif;
 }
 
 .part {
-  input, textarea {
+  input,
+  textarea {
+    outline: none;
     padding-left: 1em;
     width: 90%;
     height: 30px;
@@ -91,8 +103,7 @@ $yanone: "Yanone Kaffeesatz", sans-serif;
     color: #fff;
     font-family: $raleway;
 
-
-    &::placeholder{
+    &::placeholder {
       font-family: $raleway;
       color: rgb(182, 182, 182);
     }
@@ -114,11 +125,11 @@ $yanone: "Yanone Kaffeesatz", sans-serif;
   }
 
   &_msg {
-    grid-area: 1 / 2 / 3 / 4;    
+    grid-area: 1 / 2 / 3 / 4;
   }
 
   &_error {
-    grid-area: 3 / 2 / 4 / 4;    
+    grid-area: 3 / 2 / 4 / 4;
   }
 
   &_submit {
@@ -134,4 +145,24 @@ $yanone: "Yanone Kaffeesatz", sans-serif;
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .part {
+    input, textarea {
+      width: 60vw;
+      float: none;
+      margin: 0.5em;
+    }
+  }
+
+  .part_submit input {
+    width: 30vw;
+    text-align: center;
+  }
+}
 </style>
