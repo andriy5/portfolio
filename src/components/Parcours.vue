@@ -1,10 +1,7 @@
 <template>
   <div>
     <h1 class="emphasis">Mon Parcours</h1>
-    <div
-      id="parcours_box"
-      class="part"
-    >
+    <div id="parcours_box" class="part">
       <!-- <picture>
         <img src='@/assets/paint_transparent.png' id="painting"/>
       </picture>-->

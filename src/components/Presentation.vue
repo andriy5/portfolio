@@ -50,7 +50,12 @@
       </div>
       <div id="presentation__right__links">
         <a href="#contactme" class="btn">Me contacter ☞</a>
-        <a :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`" target="_blank" class="btn">Mon CV ☞</a>
+        <a
+          :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`"
+          target="_blank"
+          class="btn"
+          >Mon CV ☞</a
+        >
       </div>
     </div>
   </div>
@@ -61,7 +66,7 @@ export default {
   data() {
     return {
       publicPath: process.env.BASE_URL
-    }
+    };
   },
   name: "Presentation",
   props: {
@@ -180,8 +185,8 @@ export default {
 
 .emphasis {
   background: linear-gradient(to right, #ffbb00 50%, #da1b1b 120%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media only screen and (max-width: 992px) {
     background: linear-gradient(to right, #ffbb00 -10%, #da1b1b 70%);

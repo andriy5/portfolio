@@ -11,13 +11,11 @@
             <li>Nationalité: 🇵🇱 / 🇺🇦</li>
             <li>Club favori: FC Nantes</li>
             <li>Plat préféré: Bortsch*</li>
-            <li>
-              <strike>Café</strike>/ Thé.
-            </li>
+            <li><strike>Café</strike>/ Thé.</li>
           </ul>
         </div>
 
-        <div class="type-me"> 
+        <div class="type-me">
           <h2>Hobbies</h2>
           <ul>
             <li>Football</li>

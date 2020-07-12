@@ -4,15 +4,31 @@
     <div id="contactme" class="part">
       <form class="contact-form" @submit.prevent="sendEmail">
         <div class="part_name">
-          <input type="text" name="user_name" placeholder="Nom" inputmode="text" />
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Nom"
+            inputmode="text"
+          />
         </div>
 
         <div class="part_email">
-          <input type="email" name="user_email" placeholder="E-mail" inputmode="email" />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="E-mail"
+            inputmode="email"
+          />
         </div>
 
         <div class="part_msg">
-          <textarea name="message" placeholder="Bonjour Andriy..." inputmode="text" rows="5" col="10"></textarea>
+          <textarea
+            name="message"
+            placeholder="Bonjour Andriy..."
+            inputmode="text"
+            rows="5"
+            col="10"
+          ></textarea>
         </div>
 
         <div class="part_submit">
@@ -33,7 +49,7 @@ import "vue-toast-notification/dist/theme-sugar.css";
 
 export default {
   methods: {
-    sendEmail: (e) => {
+    sendEmail: e => {
       Vue.use(VueToast);
 
       if (
@@ -49,16 +65,16 @@ export default {
             "user_N189Z1RJi2t5o8twhvDnT"
           )
           .then(
-            (result) => {
+            result => {
               console.log("SUCCESS!", result.status, result.text);
               Vue.$toast.open("Message envoyé !");
             },
-            (error) => {
+            error => {
               console.log("FAILED...", error);
               Vue.$toast.open({
                 message:
                   "Il y a eu une erreur lors de l'envoi ! Si le problème persiste vous pouvez me joindre directement par mail.",
-                type: "error",
+                type: "error"
               });
             }
           );
@@ -66,11 +82,11 @@ export default {
         Vue.$toast.open({
           message: "Il semblerait qu'un des champs soit manquant !",
           type: "error",
-          duration: "5000",
+          duration: "5000"
         });
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -153,7 +169,8 @@ $yanone: "Yanone Kaffeesatz", sans-serif;
   }
 
   .part {
-    input, textarea {
+    input,
+    textarea {
       width: 60vw;
       float: none;
       margin: 0.5em;

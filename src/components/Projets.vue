@@ -5,7 +5,11 @@
       <!-- blueprint. -->
       <div class="project">
         <div class="project__preview">
-          <img src="@/assets/blueprint_show.gif" id="blueprint_video" class="video" />
+          <img
+            src="@/assets/blueprint_show.gif"
+            id="blueprint_video"
+            class="video"
+          />
         </div>
         <div class="project__desc">
           <h3>blueprint.</h3>
@@ -165,10 +169,21 @@
             </svg>
             Élu meilleur projet marketing par l'ESSEC Business School
           </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique sollicitudin. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Luctus venenatis lectus magna fringilla urna porttitor. Pellentesque habitant morbi tristique senectus et netus et.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+            consectetur adipiscing elit duis tristique sollicitudin. Sit amet
+            nulla facilisi morbi tempus iaculis urna id volutpat. Luctus
+            venenatis lectus magna fringilla urna porttitor. Pellentesque
+            habitant morbi tristique senectus et netus et.
+          </p>
           <div class="project__desc__links">
-            <a target="_blank" href="https://e-8commerce-client.herokuapp.com/">Demo</a>
-            <a target="_blank" href="https://github.com/reyesvictor/8-commerce">Code</a>
+            <a target="_blank" href="https://e-8commerce-client.herokuapp.com/"
+              >Demo</a
+            >
+            <a target="_blank" href="https://github.com/reyesvictor/8-commerce"
+              >Code</a
+            >
           </div>
         </div>
       </div>
@@ -215,21 +230,38 @@
               </svg>
             </p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique sollicitudin. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Luctus venenatis lectus magna fringilla urna porttitor. Pellentesque habitant morbi tristique senectus et netus et.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+            consectetur adipiscing elit duis tristique sollicitudin. Sit amet
+            nulla facilisi morbi tempus iaculis urna id volutpat. Luctus
+            venenatis lectus magna fringilla urna porttitor. Pellentesque
+            habitant morbi tristique senectus et netus et.
+          </p>
           <div class="project__desc__links project__desc__links-right">
             <a target="_blank" class="disabled">Demo</a>
-            <a target="_blank" href="https://github.com/andriy5/my_snapchat">Code</a>
+            <a target="_blank" href="https://github.com/andriy5/my_snapchat"
+              >Code</a
+            >
           </div>
         </div>
         <div class="project__preview project__preview-right">
-          <img src="@/assets/comingsoon.gif" id="blueprint_video" class="video" />
+          <img
+            src="@/assets/comingsoon.gif"
+            id="blueprint_video"
+            class="video"
+          />
         </div>
       </div>
 
       <!-- My Bon Coin -->
       <div class="project">
         <div class="project__preview">
-          <img src="@/assets/freeads_show.gif" id="freeads_video" class="video" />
+          <img
+            src="@/assets/freeads_show.gif"
+            id="freeads_video"
+            class="video"
+          />
         </div>
         <div class="project__desc">
           <h3>MY BONCOIN</h3>
@@ -285,10 +317,19 @@
               </svg>
             </p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique sollicitudin. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Luctus venenatis lectus magna fringilla urna porttitor. Pellentesque habitant morbi tristique senectus et netus et.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+            consectetur adipiscing elit duis tristique sollicitudin. Sit amet
+            nulla facilisi morbi tempus iaculis urna id volutpat. Luctus
+            venenatis lectus magna fringilla urna porttitor. Pellentesque
+            habitant morbi tristique senectus et netus et.
+          </p>
           <div class="project__desc__links">
             <a target="_blank" class="disabled">Demo</a>
-            <a target="_blank" href="https://github.com/andriy5/MVC_Free_Ads">Code</a>
+            <a target="_blank" href="https://github.com/andriy5/MVC_Free_Ads"
+              >Code</a
+            >
           </div>
         </div>
       </div>
@@ -369,24 +410,40 @@
               </svg>
             </p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique sollicitudin. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Luctus venenatis lectus magna fringilla urna porttitor. Pellentesque habitant morbi tristique senectus et netus et.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+            consectetur adipiscing elit duis tristique sollicitudin. Sit amet
+            nulla facilisi morbi tempus iaculis urna id volutpat. Luctus
+            venenatis lectus magna fringilla urna porttitor. Pellentesque
+            habitant morbi tristique senectus et netus et.
+          </p>
           <div class="project__desc__links project__desc__links-right">
-            <a target="_blank" href="https://tweet-academie-42.herokuapp.com/index.php">Demo</a>
-            <a target="_blank" href="https://github.com/reyesvictor/Tweet_Academie_Public/">Code</a>
+            <a
+              target="_blank"
+              href="https://tweet-academie-42.herokuapp.com/index.php"
+              >Demo</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/reyesvictor/Tweet_Academie_Public/"
+              >Code</a
+            >
           </div>
         </div>
         <div class="project__preview project__preview-right">
-          <img src="@/assets/twitter_show.gif" id="blueprint_video" class="video" />
+          <img
+            src="@/assets/twitter_show.gif"
+            id="blueprint_video"
+            class="video"
+          />
         </div>
       </div>
 
       <div class="project-last">
         <h2>
           encore ? Vous trouverez d'autres projets sur mon
-          <a
-            target="_blank"
-            href="https://github.com/andriy5"
-          >github</a>...
+          <a target="_blank" href="https://github.com/andriy5">github</a>...
         </h2>
       </div>
     </div>

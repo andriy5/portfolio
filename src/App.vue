@@ -4,7 +4,11 @@
       <!-- <router-link to="/">Home</router-link> -->
       <a href="#aboutme">À propos</a>
       <a href="#projects">Projets</a>
-      <a :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`" target="_blank">CV</a>
+      <a
+        :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`"
+        target="_blank"
+        >CV</a
+      >
 
       <a id="initiale" class="emphasis">ANDRIY SHAKH</a>
       <!-- <router-link to="/about">About</router-link> -->
@@ -18,9 +22,9 @@ export default {
   data() {
     return {
       publicPath: process.env.BASE_URL
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -116,9 +120,7 @@ h2 {
     display: none;
   }
 
-  #initiale
-
-  .type {
+  #initiale .type {
     width: 44%;
   }
 
@@ -138,7 +140,7 @@ h2 {
 
 .emphasis {
   background: linear-gradient(to right, #ffbb00 40%, #da1b1b 70%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
