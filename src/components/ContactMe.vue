@@ -157,6 +157,10 @@ $yanone: "Yanone Kaffeesatz", sans-serif;
       float: right;
       width: 80px;
       text-align: left;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

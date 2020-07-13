@@ -11,59 +11,47 @@
           <li>
             <h3>Samsung Campus</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
-              pretium viverra suspendisse potenti nullam ac. Nec nam aliquam sem
-              et tortor. Dictum fusce ut placerat orci nulla pellentesque. Erat
-              imperdiet sed euismod nisi.
+              2020-2021 <br/><br/>
+              Préparation au diplôme de <u>Dévloppeur web Full-Stack (RNCP 5 Bac+2)</u> grâce à la pédagogie EPITECH, basé sur des projets en autonomie pour la majorité mais aussi quelques projets effectués en groupe avec la méthodologie AGILE.
             </p>
           </li>
           <li>
             <h3>URMA Loire-Atlantique</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
-              pretium viverra suspendisse potenti nullam ac. Nec nam aliquam sem
-              et tortor. Dictum fusce ut placerat orci nulla pellentesque. Erat
-              imperdiet sed euismod nisi.
+              2014-2017 <br/><br/>
+              Préparation du <u>Baccalauréat Professionel Mécanicien Automobile</u> en alternance. Stage de 2 semaines effectué en Italie à Pinerolo.<br/><i>Obtenu avec mention Bien.</i>
             </p>
           </li>
         </ul>
       </div>
-
-      <!-- <h1 class="title-side-A">Formation</h1>
-      <h1 class="title-side-B">Éxperience</h1>-->
 
       <div id="xp" class="parcours">
         <ul>
           <li>
             <h3>Rentscape</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
-              pretium viverra suspendisse potenti nullam ac. Nec nam aliquam sem
-              et tortor. Dictum fusce ut placerat orci nulla pellentesque. Erat
-              imperdiet sed euismod nisi.
+              CONSEILLER COMMERCIAL | 2018-2019 <br/><br/>
+              Prise en charge clientèle internationale: création contrat de location au comptoir, vente options
+              additionnelles et convoyage des clients en mini-bus
+              <br />
+              <br />Gestion administrative: réservations (arrivées / départs), facturations, appels téléphoniques,
+              réponse aux mails, gestion parc véhicule
+              <br />
+              <br />Préparation véhicule pour la location, contrôle flotte véhicule, contrôle stock back-office, petite mécanique
             </p>
           </li>
           <li>
             <h3>Stages ERASMUS+</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
-              pretium viverra suspendisse potenti nullam ac. Nec nam aliquam sem
-              et tortor. Dictum fusce ut placerat orci nulla pellentesque. Erat
-              imperdiet sed euismod nisi.
-            </p>
+              MÉCANICIEN AUTO | 2017-2018 <br/><br/>
+              Durant un an j'ai pu décourvrir trois entreprises à Berlin et à Londres où j'ai pu effectuer des travaux mécaniques automobile sur différents gammes de véhicule. Allant de la voiture de collection à l'haut-de-gamme.</p>
           </li>
-          <li @mouseover="changeBg" @mouseleave="resetBg">
+          <li>
             <h3>PSA Citroën Retail</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
-              pretium viverra suspendisse potenti nullam ac. Nec nam aliquam sem
-              et tortor. Dictum fusce ut placerat orci nulla pellentesque. Erat
-              imperdiet sed euismod nisi.
+              APPRENTI MÉCANICIEN | 2014-2017 <br/><br/>
+              Apprentissage du métier du mécanicien automobile dans son ensemble.
+              Effectué en alternance au sein d’une succursale.
             </p>
           </li>
         </ul>

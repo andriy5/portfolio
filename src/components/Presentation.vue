@@ -41,11 +41,10 @@
           <u>Andriy Shakh</u>
         </h1>
         <h1 id="title" class="emphasis">Développeur Web Full-Stack</h1>
-        <h2>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum
-          nisi quis eleifend quam. Sit amet mauris commodo quis imperdiet
-          massa."
+        <h2 id="presentation_paragraph">
+          "Étudiant au Samsung Campus dans le développement web, je suis en quête d'une alternance à partir du 02 Novembre 2020 jusqu'au 29 Octobre 2021. 
+          <br/>
+          Curieux et investi j'aimerais apporter ma contribution à un projet ambitieux et challengeant !"
         </h2>
       </div>
       <div id="presentation__right__links">
@@ -94,6 +93,10 @@ export default {
     height: auto;
     z-index: -1;
     overflow: hidden;
+  }
+
+  &_paragraph {
+    text-transform: none;
   }
 
   &__right {

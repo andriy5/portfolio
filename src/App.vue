@@ -21,7 +21,8 @@
 export default {
   data() {
     return {
-      publicPath: process.env.BASE_URL
+      // publicPath: process.env.BASE_URL
+      publicPath: process.env.NODE_ENV === "production" ? "/portfolio/" : "/",
     };
   }
 };
