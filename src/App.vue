@@ -2,15 +2,15 @@
   <div id="app">
     <div id="nav">
       <!-- <router-link to="/">Home</router-link> -->
-      <a href="#aboutme">À propos</a>
-      <a href="#projects">Projets</a>
+      <a href="#aboutme" class="hide">À propos</a>
+      <a href="#projects" >Projets</a>
       <a
         :href="`${publicPath}CV_DéveloppeurWeb_Andriy_Shakh.pdf`"
         target="_blank"
         >CV</a
       >
 
-      <a id="initiale" class="emphasis">ANDRIY SHAKH</a>
+      <a id="initiale" class="emphasis" href="#">ANDRIY SHAKH</a>
       <!-- <router-link to="/about">About</router-link> -->
     </div>
     <router-view />
@@ -53,8 +53,15 @@ html body {
 }
 
 #nav {
-  padding: 30px;
-  margin-bottom: 15px;
+  // margin: 0 1em;
+  padding: 1em;
+  // padding-right: 32px;
+  // margin-bottom: 15px;
+  position: fixed;
+  background-color: #1d1d1d;
+  z-index: 99;
+  width: 100%;
+  box-sizing: border-box;
 
   a {
     float: right;
@@ -143,5 +150,11 @@ h2 {
   background: linear-gradient(to right, #ffbb00 40%, #da1b1b 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hide {
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 </style>

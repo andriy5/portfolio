@@ -42,9 +42,14 @@
         </h1>
         <h1 id="title" class="emphasis">Développeur Web Full-Stack</h1>
         <h2 id="presentation_paragraph">
-          "Étudiant au Samsung Campus dans le développement web, je suis en quête d'une alternance à partir du 02 Novembre 2020 jusqu'au 29 Octobre 2021. 
+          Étudiant en développement web au Samsung Campus par EPITECH,
           <br/>
-          Curieux et investi j'aimerais apporter ma contribution à un projet ambitieux et challengeant !"
+          je suis en quête d'une alternance 
+          <br/>
+          à partir du 02 Novembre 2020 jusqu'au 29 Octobre 2021. 
+          <br/>
+          <br/>
+          Curieux et investi, j'aimerais apporter ma contribution à un projet ambitieux et challengeant !
         </h2>
       </div>
       <div id="presentation__right__links">
@@ -84,6 +89,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   margin: 0 3rem;
+  padding-top: 3rem;
 
   img {
     position: absolute;

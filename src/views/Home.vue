@@ -2,12 +2,13 @@
   <div class="home">
     <!-- <Navbar /> -->
     <Presentation />
-    <Parcours />
     <Competence />
     <Projets />
+    <Parcours />
     <AboutMe />
     <ContactMe />
     <Footer />
+    <PageTop />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Competence from "@/components/Competence.vue";
 import AboutMe from "@/components/AboutMe.vue";
 import ContactMe from "@/components/ContactMe.vue";
 import Footer from "@/components/Footer.vue";
+import PageTop from "@/components/PageTop.vue";
 
 export default {
   name: "Home",
@@ -30,7 +32,8 @@ export default {
     Competence,
     AboutMe,
     ContactMe,
-    Footer
+    Footer,
+    PageTop
   }
 };
 </script>

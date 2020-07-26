@@ -26,7 +26,7 @@
             name="message"
             placeholder="Bonjour Andriy..."
             inputmode="text"
-            rows="5"
+            rows="14"
             col="10"
           ></textarea>
         </div>
@@ -95,33 +95,39 @@ $raleway: "Raleway", sans-serif;
 $yanone: "Yanone Kaffeesatz", sans-serif;
 
 #contactme {
+  height: 45vh;
   margin: 0 3rem;
   padding: 3rem;
   background-color: #222222;
 }
 .contact-form {
-  display: grid;
-  grid-template-columns: 20% 40% 40%;
-  grid-template-rows: 70px 70px 30px;
-  column-gap: 1em;
-  row-gap: 1em;
+  // display: grid;
+  // grid-template-columns: 20% 40% 40%;
+  // grid-template-rows: 70px 70px 30px;
+  // column-gap: 1em;
+  // row-gap: 1em;
 }
 
 .part {
   input,
   textarea {
     outline: none;
+    border-color: transparent;
     padding-left: 1em;
     width: 90%;
     height: 30px;
     background-color: #222;
-    border: 1px solid #fff;
+    border-bottom: 1px solid rgb(182, 182, 182);
     color: #fff;
     font-family: $raleway;
 
     &::placeholder {
       font-family: $raleway;
       color: rgb(182, 182, 182);
+    }
+
+    &:focus {
+    border-bottom: 1px solid #fff!important;
     }
   }
 
@@ -130,42 +136,47 @@ $yanone: "Yanone Kaffeesatz", sans-serif;
     width: 95%;
     height: 90%;
     padding-top: 1em;
+    resize: vertical;
   }
 
-  &_name {
-    grid-area: 1 / 1 / 1 / 1;
-  }
+  // &_name {
+  //   grid-area: 1 / 1 / 1 / 1;
+  // }
 
-  &_email {
-    grid-area: 2 / 1 / 3 / 1;
-  }
+  // &_email {
+  //   grid-area: 2 / 1 / 3 / 1;
+  // }
 
-  &_msg {
-    grid-area: 1 / 2 / 3 / 4;
-  }
+  // &_msg {
+  //   grid-area: 1 / 2 / 3 / 4;
+  // }
 
-  &_error {
-    grid-area: 3 / 2 / 4 / 4;
-  }
+  // &_error {
+  //   grid-area: 3 / 2 / 4 / 4;
+  // }
 
   &_submit {
-    grid-area: 3 / 3 / 3 / 3;
+  //   grid-area: 3 / 3 / 3 / 3;
 
     input {
       background-color: #fff;
       color: #000;
       float: right;
       width: 80px;
-      text-align: left;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0;
+      letter-spacing: 0.2em; 
 
       &:hover {
         cursor: pointer;
+        background-color: rgb(238, 238, 238);
       }
     }
   }
 }
 
-@media only screen and (max-width: 550px) {
+// @media only screen and (max-width: 550px) {
   .contact-form {
     display: flex;
     justify-content: center;
@@ -179,11 +190,15 @@ $yanone: "Yanone Kaffeesatz", sans-serif;
       float: none;
       margin: 0.5em;
     }
+
+    &_msg {
+      height: 100%;
+    }
   }
 
   .part_submit input {
     width: 30vw;
     text-align: center;
   }
-}
+// }
 </style>

@@ -6,12 +6,12 @@
         <div class="type-me">
           <h2>points essentiels</h2>
           <ul>
-            <li>Nom: Andriy Shakh</li>
             <li>Âge: 20 ans (et demi)</li>
-            <li>Nationalité: 🇵🇱 / 🇺🇦</li>
-            <li>Club favori: FC Nantes</li>
-            <li>Plat préféré: Bortsch*</li>
             <li><strike>Café</strike>/ Thé.</li>
+            <li>Pluriculturel: France / Pologne / Ukraine</li>
+            <li>Plat préféré: Bortsch<b>*</b></li>
+            <li>Club favori: FC Nantes</li>
+            <li>Éclectique</li>
           </ul>
         </div>
 
@@ -21,8 +21,7 @@
             <li>Football</li>
             <li>Automobile</li>
             <li>Graphisme et Design</li>
-            <li>Voyage</li>
-            <li>Musique</li>
+            <li>Voyages</li>
           </ul>
         </div>
 
@@ -30,26 +29,17 @@
           <h2>Langues parlées</h2>
           <ul>
             <li>
-              <b>NATIF</b>
-            </li>
-            <li>🇫🇷 Français</li>
-            <br />
-            <li>
               <b>COURANT</b>
             </li>
-            <li>🇺🇸🇬🇧 Anglais</li>
-            <li>🇺🇦 Ukrainien</li>
+            <li>Anglais</li>
+            <li>Ukrainien</li>
             <br />
             <li>
               <b>INTERMÉDIAIRE</b>
             </li>
-            <li>🇷🇺 Russe</li>
-            <li>🇵🇱 Polonais</li>
-            <br />
-            <li>
-              <b>NOTIONS</b>
-            </li>
-            <li>🇩🇪 Allemand</li>
+            <li>Russe</li>
+            <li>Polonais</li>
+            <li>Allemand</li>
           </ul>
         </div>
       </div>
@@ -61,7 +51,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+  return {
+    message: 'Hello Twemoji ✨🍣😋🇺🇦'
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>

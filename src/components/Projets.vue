@@ -169,8 +169,10 @@
             >Élu meilleur projet marketing par l'ESSEC Business School</a>
           </p>
           <p>
-            Projet réalisé dans un groupe de 8 utilisant la méthode AGILE, avec principalement React.js et
-            Symfony. Tâches effectuées sur la partie front-end principalement. Partie marketing guidé par
+            Projet réalisé en équipe (8 personnes) utilisant la méthode AGILE, avec comme technologie utilisé React.js et
+            Symfony. 
+            <br/>
+            Responsabilité de la partie front-end. Partie marketing guidée par
             l’ESSEC Business School.
           </p>
           <div class="project__desc__links">
@@ -223,20 +225,17 @@
             </p>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-            consectetur adipiscing elit duis tristique sollicitudin. Sit amet
-            nulla facilisi morbi tempus iaculis urna id volutpat. Luctus
-            venenatis lectus magna fringilla urna porttitor. Pellentesque
-            habitant morbi tristique senectus et netus et.
+            Reproduction du réseau social en front-end à partir d'une API avec la possibilité de s'inscrire et d'envoyer des "snaps" avec un temps prédéfini.
+            <br />
+            Réalisé entièrement avec React.js.
           </p>
           <div class="project__desc__links project__desc__links-right">
-            <a target="_blank" class="disabled">Demo</a>
+            <!-- <a target="_blank" class="disabled">Demo</a> -->
             <a target="_blank" href="https://github.com/andriy5/my_snapchat">Code</a>
           </div>
         </div>
         <div class="project__preview project__preview-right">
-          <img src="@/assets/comingsoon.gif" id="blueprint_video" class="video" />
+          <img src="@/assets/snapchat_show.gif" id="blueprint_video" class="video video_mobile" />
         </div>
       </div>
 
@@ -299,9 +298,11 @@
               </svg>
             </p>
           </div>
-          <p>Projet réalisé avec Laravel en autonomie, reproduisant un site de petite annonce. Avec la possibilité de s'inscrire, de déposer des annonces et de pouvoir les modifier ainsi que de les supprimer.</p>
+          <p>Projet réalisé avec Laravel, reproduisant un site de petite annonce. 
+            <br/>
+            Avec la possibilité de s'inscrire, de déposer des annonces et de pouvoir les modifier ainsi que de les supprimer.</p>
           <div class="project__desc__links">
-            <a target="_blank" class="disabled">Demo</a>
+            <!-- <a target="_blank" class="disabled">Demo</a> -->
             <a target="_blank" href="https://github.com/andriy5/MVC_Free_Ads">Code</a>
           </div>
         </div>
@@ -383,7 +384,9 @@
               </svg>
             </p>
           </div>
-          <p>Reproduction du site Twitter dans un groupe de 4 étudiants. Utilisant du PHP avec l'architecture MVC et un micro-framework Skeleton CSS. J'étais plus concentré sur l'aspect front-end, mais j'ai évidemment partcipé au back-end aussi.</p>
+          <p>Reproduction du site Twitter, projet réalisé dans un groupe de 4 personnes. Utilisant du PHP avec l'architecture MVC et un micro-framework Skeleton CSS.
+          <br/>
+          Plus spécifiquement en charge du front-end, mais j'ai participé au back-end aussi.</p>
           <div class="project__desc__links project__desc__links-right">
             <a target="_blank" href="https://tweet-academie-42.herokuapp.com/index.php">Demo</a>
             <a target="_blank" href="https://github.com/reyesvictor/Tweet_Academie_Public/">Code</a>
@@ -396,7 +399,9 @@
 
       <div class="project-last">
         <h2>
-          encore ? Vous trouverez mes autres projets sur mon
+          Vous en voulez encore ?
+          <br/>
+          Vous trouverez mes autres projets sur mon
           <a
             target="_blank"
             href="https://github.com/andriy5"
@@ -502,6 +507,12 @@ h3 {
   margin: auto;
   width: 100%;
   height: auto;
+
+  &_mobile {
+    height: 40vh;
+    width: auto;
+    float: left;
+  }
 }
 
 #price {
